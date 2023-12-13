@@ -12,7 +12,7 @@ keep_alive()
 
 # Setup OpenAI API key
 try:
-    openai.api_key = os.environ['key2']
+    openai.api_key = os.environ['key.txt']
 except KeyError:
     sys.stderr.write("Error: OpenAI API key not found. Please set it up.\n")
     exit(1)
